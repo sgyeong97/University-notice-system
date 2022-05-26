@@ -1,0 +1,18 @@
+<title>Sign up</title>
+{% extends 'accounts/base_signup.html' %}
+{% block content %}
+	<h2>회원가입</h2>
+	<form method="post" action="">
+	<div class="center">
+		{% csrf_token %}
+		<center><span id="txt">회원가입</span></center>
+		<br>
+		<p><span id="sig1">아이디</span>{{ form.username }}</p>
+		<p><span id="sig2">비밀번호</span>{{ form.password1 }}</p>
+		<p><span id="sig3">비밀번호 확인</span>{{ form.password2 }}</p>
+		<br>
+		<center><button type="submit" class="bt_submit">완료</button></center>
+	</div>
+	</form>
+
+{% endblock %}

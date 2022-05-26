@@ -1,0 +1,22 @@
+<title>Posting</title>
+<br><br>
+{% extends 'notice/base.html' %}
+{% block content %}
+<body style="padding-left:0; padding-top:5%; margin:0;">
+
+<form method="POST" enctype="multipart/form-data">
+	<div class="center">
+		{% csrf_token %}
+		<center>
+		<p id="to"><span id="unl">포스팅</span></p>
+		<p><span id="t1">제목</span>{{ form.title }}</p>
+		{{ form.body }}
+		{{ form.media }}
+		<p><span id="t2">파일첨부</span>{{ form.file }}</p>
+		<p><span id="t3">태그</span>{{ form.tag }}</p>
+		<p><input type="submit" value="완료" /></p>
+		<center>
+	</div>
+</form>
+
+{% endblock %}

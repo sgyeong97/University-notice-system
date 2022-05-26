@@ -1,0 +1,23 @@
+{% extends 'notice/base.html' %}
+{% block content %}
+
+	<div class="detail">
+		<p id="title">{{ post.title|upper }}</p>
+			<p><snap id="creator">글쓴이[{{ post.creator.get_username }}]</snap>
+			<snap id="date">작성시간 {{ post.create_date }}</snap></p>
+			<div id="det">태그
+			{% for tag_name in post.tag.names %}
+				<snap>#{{ tag_name }}</snap>
+			{% endfor %}
+			</div>
+			</div>
+		</div>
+	</div>
+	<div id="con">{{ post.body|safe }}
+	{% if post.file %}
+		<snap> File</snap>
+		<a id="file_down" href="{{ post.file.url }}" download>{{ post.file }}</a>
+	{% endif %}
+	</div>
+
+{% endblock %}

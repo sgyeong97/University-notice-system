@@ -1,0 +1,17 @@
+<title>My notice</title>
+{% extends 'notice/base.html' %}
+{% block content %}
+	<br><br>
+	{% for post in posts %}
+		<nav class="list">
+			<h1><a href="post/{{ post.id }}">{{ post.title|upper }}</a></h1>
+			<p>{{ post.create_date |date:"Y년M d일 (a H시i분)" }}</p>
+			{% for tag_name in post.tag.names %}
+				<div id="tag">#{{ tag_name }}</div>
+			{% endfor %}
+
+		</nav>
+			<div id="content">{{ post.body|safe}}</div>
+	{% endfor %}
+
+{% endblock %}
