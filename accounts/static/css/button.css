@@ -1,0 +1,41 @@
+input[type=submit] {
+	font-size: 3vmin;
+	border: none;
+	border-radius: 1.2vmin;
+	outline: none;
+	background:none;
+	font-weight: bold;
+	color: white;
+	padding: 8px 5px 8px 5px;
+	margin: 5px 5px 5px 5px;
+}
+
+input[type=submit]:hover {
+	background: white;
+	opacity: 0.5;
+	color: #222222;
+}
+
+.bt_submit {
+	font-size: 3vmin;
+	border: none;
+	border-radius: 1.2vmin;
+	outline: none;
+	background: none;
+	color: white;
+	padding: 8px 12px 8px 12px;
+	margin: 5px 5px 5px 5px;
+	font-weight: bold;
+}
+
+.bt_submit:hover {
+	background: white;	
+	opacity: 0.6;
+	color: #222222;
+}
+
+.intext {
+	width: 2rem;
+	height: 2rem;
+	font-size: 20px;
+}
