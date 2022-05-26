@@ -1,0 +1,66 @@
+body {
+	padding-left: 15%;
+	padding-right: 0;
+	margin-top: 5%;
+}
+
+.detail {
+	margin-top: 1%;
+	background: #222222;
+	color: white;
+	width: 85%;
+	text-align: center;
+
+}
+.detail p{
+	margin:1%;
+	padding:0;
+}
+
+#title {
+	font-size: 40px;
+	margin-left: 1%;
+	font-weight: bold;
+	margin-right: 1%;
+	padding-top: 10px;
+}
+
+#date {
+	margin-left: 1%;
+	font-size:20px;
+}
+
+#creator {
+	margin-left:1%;
+	font-size:20px;
+}
+
+#det {
+	margin-left: 1%;
+	margin-right: 1%;
+	font-size: 22px;
+	color: #BACDC9;
+	font-weight: bold;
+	text-align: right;
+}
+
+#con {
+	width: 81%;
+	margin-left: 2%;
+	margin-top: 3%;
+	font-size:30px;
+	word-wrap: break-word;
+}
+
+#con snap{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#file_down {
+	background: #DCE1E0;
+	padding: 5px;
+	color: black;
+	text-decoration:none;
+	font-size: 25px;
+}
